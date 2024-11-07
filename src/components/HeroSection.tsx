@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import heroImage from '../assets/images/HeroSection.jpg';
 
 const HeroSection = ({ onLearnMoreClick }: { onLearnMoreClick: () => void }) => {
   return (
@@ -6,7 +7,7 @@ const HeroSection = ({ onLearnMoreClick }: { onLearnMoreClick: () => void }) => 
       <div 
         className="absolute inset-0 z-0 opacity-10"
         style={{
-          backgroundImage: "url('/src/assets/images/HeroSection.jpg')",
+          backgroundImage: `url(${heroImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           filter: "brightness(1.2)"

@@ -6,6 +6,8 @@ import DriverFeatures from "../components/DriverFeatures";
 import CompanySection from "../components/CompanySection";
 import { Shield, Zap, Battery, Factory, AlertCircle, FileText, Copyright } from "lucide-react";
 import workImage from '../assets/images/work.jpg';
+import plusDriverImage from '../assets/images/plus driver.jpg';
+import minusDriverImage from '../assets/images/minus driver.jpg';
 
 const SpecItem = ({ icon: Icon, title, description }: { 
   icon: React.ElementType, 
@@ -183,13 +185,13 @@ const Index = () => {
                 <ProductCard
                   title="見電ドライバー（＋）"
                   description="プラスドライバー型の検電ドライバー"
-                  image="/src/assets/images/plus driver.jpg"
+                  image={plusDriverImage}
                   titleColor="text-blue-600"
                 />
                 <ProductCard
                   title="見電ドライバー（－）"
                   description="マイナスドライバー型の検電ドライバー"
-                  image="/src/assets/images/minus driver.jpg"
+                  image={minusDriverImage}
                   titleColor="text-yellow-500"
                 />
               </div>

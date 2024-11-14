@@ -20,7 +20,7 @@ const CompanySection: FC = () => {
                       className="w-16 h-16 object-contain"
                     />
                     <div>
-                      <h4 className="text-xl font-bold text-gray-900">昭栄電気株式会社</h4>
+                      <h4 className="text-xl font-bold text-gray-900">株式会社昭栄電気産業</h4>
                       <p className="text-gray-600">Shoei Electrical Industries Co., Ltd.</p>
                     </div>
                   </div>
@@ -28,16 +28,20 @@ const CompanySection: FC = () => {
                 
                 <div className="space-y-4">
                   <div className="flex flex-col md:flex-row gap-2 md:gap-4">
+                    <span className="text-base md:text-base text-black font-bold whitespace-nowrap">販売元</span>
+                    <span className="text-base md:text-base text-gray-700 whitespace-nowrap scale-90 origin-left">昭栄電気産業</span>
+                  </div>
+                  <div className="flex flex-col md:flex-row gap-2 md:gap-4">
                     <span className="text-base md:text-base text-black font-bold whitespace-nowrap">所在地</span>
                     <span className="text-base md:text-base text-gray-700 whitespace-nowrap scale-90 origin-left">〒125-0053 東京都葛飾区鎌倉3-58-2</span>
                   </div>
                   <div className="flex flex-col md:flex-row gap-2 md:gap-4">
-                    <span className="text-base md:text-base text-black font-bold whitespace-nowrap">製造元</span>
-                    <span className="text-base md:text-base text-gray-700 whitespace-nowrap scale-90 origin-left">株式会社ベッセル</span>
-                  </div>
-                  <div className="flex flex-col md:flex-row gap-2 md:gap-4">
                     <span className="text-base md:text-base text-black font-bold whitespace-nowrap">お問い合わせ</span>
                     <span className="text-base md:text-base text-gray-700 whitespace-nowrap scale-90 origin-left">shoei-buppan@shoeinet.com</span>
+                  </div>
+                  <div className="flex flex-col md:flex-row gap-2 md:gap-4">
+                    <span className="text-base md:text-base text-black font-bold whitespace-nowrap">製造元</span>
+                    <span className="text-base md:text-base text-gray-700 whitespace-nowrap scale-90 origin-left">株式会社ベッセル</span>
                   </div>
                 </div>
               </div>

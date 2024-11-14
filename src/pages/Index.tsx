@@ -6,6 +6,10 @@ import DriverFeatures from "../components/DriverFeatures";
 import CompanySection from "../components/CompanySection";
 import { Shield, Zap, Battery, Factory, AlertCircle, FileText, Copyright } from "lucide-react";
 import workImage from '../assets/images/work.jpg';
+import safetyImage from '../assets/images/Safty img.jpg';
+import safetyImageNoTitle from '../assets/images/Safty img no title.jpg';
+import safetyImageL from '../assets/images/Safty img L.jpg';
+import safetyImageR from '../assets/images/Safty img R.jpg';
 
 const SpecItem = ({ icon: Icon, title, description }: { 
   icon: React.ElementType, 
@@ -89,7 +93,7 @@ const Index = () => {
                 <SpecItem
                   icon={Factory}
                   title="Made in Japan"
-                  description="品質と信頼性にこだわった国内生産"
+                  description="品質と信頼性にこわった国内生産"
                 />
               </div>
             </div>
@@ -120,53 +124,40 @@ const Index = () => {
             <div className="mt-24 relative">
               <div className="relative z-10">
                 <h2 className="section-title !text-green-600">SAFETY</h2>
-                <h3 className="section-subtitle">電気工事をする方々のお悩みを解決</h3>
-                <div className="grid md:grid-cols-2 gap-8 items-center">
-                  <div className="space-y-6 text-left">
-                    <div className="bg-gray-900/80 p-6 rounded-lg border border-green-600/20">
-                      <h4 className="text-lg font-semibold text-green-600 mb-2 flex items-center gap-2">
-                        <AlertCircle className="w-5 h-5" />
-                        作業時の不安を解消
-                      </h4>
-                      <ul className="space-y-3 text-gray-300">
-                        <li>・さっき検電したから大丈夫？という不安</li>
-                        <li>・目に見えない電気作業の恐怖</li>
-                        <li>・通電状態の確実な確認</li>
-                        <li>・スイッチの切り忘防止</li>
+                <h3 className="section-subtitle">電気工事をする人のお悩みを解決</h3>
+                <div className="grid md:grid-cols-2 gap-0 items-center max-w-4xl md:max-w-none mx-auto">
+                  <div className="relative flex justify-end">
+                    <div className="border-2 border-gray-300 rounded-full p-8 w-[140%] bg-white">
+                      <ul className="space-y-4 text-gray-700 flex flex-col items-center">
+                        <li className="text-center relative">
+                          <span className="border-b-2 border-gray-300 pb-1 inline-block text-sm md:text-base lg:text-lg">
+                            さっき検電したから今も大丈夫？
+                          </span>
+                        </li>
+                        <li className="text-center relative">
+                          <span className="border-b-2 border-gray-300 pb-1 inline-block text-sm md:text-base lg:text-lg">
+                            電気の作業って見えないから怖い・・・。
+                          </span>
+                        </li>
+                        <li className="text-center relative">
+                          <span className="border-b-2 border-gray-300 pb-1 inline-block text-sm md:text-base lg:text-lg">
+                            このネジ電気が流れてない？緩めても平気？
+                          </span>
+                        </li>
+                        <li className="text-center relative">
+                          <span className="border-b-2 border-gray-300 pb-1 inline-block text-sm md:text-base lg:text-lg">
+                            あれ？スイッチ切ったかな？
+                          </span>
+                        </li>
                       </ul>
                     </div>
                   </div>
-                  <div className="relative">
+                  <div className="relative flex justify-center md:justify-start items-center">
                     <img
-                      src={workImage}
-                      alt="電気工事作業"
-                      className="rounded-lg object-cover w-full h-[300px]"
+                      src={safetyImageR}
+                      alt="電気工事の安全 右"
+                      className="rounded-lg object-contain w-[95%] md:w-[80%]"
                     />
-                  </div>
-                </div>
-
-                <div className="mt-12 backdrop-blur-sm rounded-lg p-6 border-2 border-gray-800 !bg-transparent">
-                  <div className="flex items-start gap-3">
-                    <div className="bg-orange-500 rounded-full p-2 mt-1">
-                      <AlertCircle className="w-5 h-5 text-white" />
-                    </div>
-                    <div>
-                      <h4 className="text-gray-900 font-bold text-lg mb-3">使用上の注意</h4>
-                      <ul className="space-y-2 text-gray-900 md:text-center">
-                        <li className="flex items-start gap-2 text-left">
-                          <span className="text-gray-900 mt-1">•</span>
-                          ゴム手袋、ゴム長靴、ゴーグル等の安全保護具の着用をしてください。
-                        </li>
-                        <li className="flex items-start gap-2 text-left">
-                          <span className="text-gray-900 mt-1">•</span>
-                          水滴、打撃などの強い衝撃を与えないでください。
-                        </li>
-                        <li className="flex items-start gap-2 text-left">
-                          <span className="text-gray-900 mt-1">•</span>
-                          水のかかる場所や湿気の多い場所では使用しないでください。
-                        </li>
-                      </ul>
-                    </div>
                   </div>
                 </div>
               </div>
